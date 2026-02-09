@@ -1,13 +1,13 @@
 from pydantic import BaseModel, EmailStr
-from typing import Optional
 
 
 class UserBase(BaseModel):
     email: EmailStr
-    is_active: bool = True
+    is_active: bool
 
 
-class UserCreate(UserBase):
+class UserCreate(BaseModel):
+    email: EmailStr
     password: str
 
 
