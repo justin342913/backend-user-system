@@ -1,11 +1,29 @@
-# Backend User System
+# Backend User System (FastAPI)
 
-Backend system built with FastAPI.
+A simple user management and authentication system built with FastAPI, SQLAlchemy, JWT, and Docker.
+
+## Features
+
+- User registration
+- User listing
+- Password hashing (bcrypt)
+- JWT authentication
+- Protected API endpoint
+- Dockerized backend service
 
 ## Tech Stack
-- Python
-- FastAPI
 
-## Run
+- FastAPI
+- SQLAlchemy
+- SQLite
+- JWT (python-jose)
+- Passlib (bcrypt)
+- Docker
+
+---
+
+## Run with Docker
+
+### 1. Build image
 ```bash
-uvicorn app.main:app --reload
+docker build -t user-api .
