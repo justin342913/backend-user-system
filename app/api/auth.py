@@ -7,9 +7,9 @@ from jose import jwt
 from app.database import get_db
 from app.models.user import User
 from app.core.security import verify_password
+import os
 
-
-SECRET_KEY = "82dasdj2348ggf8d4"
+SECRET_KEY = os.getenv("SECRET_KEY", "dev-secret")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
