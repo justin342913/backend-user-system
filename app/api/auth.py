@@ -9,7 +9,7 @@ from app.models.user import User
 from app.core.security import verify_password
 
 
-SECRET_KEY = "change_this_later"
+SECRET_KEY = "82dasdj2348ggf8d4"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
